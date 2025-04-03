@@ -33,7 +33,25 @@
     </style>
 </head>
 <body>
-    <div class="login-container flex items-center justify-center p-4">
+    <!-- Navbar -->
+    <div id="navbar"></div>
+    <script>
+      fetch('/components/navbar.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('navbar').innerHTML = html;
+          // Adjust page layout after navbar loads
+          document.querySelector('.login-container').classList.add('mt-16');
+        })
+        .catch(() => {
+          document.getElementById('navbar').innerHTML = `
+            <nav class="bg-white shadow-sm p-4">Navigation</nav>
+          `;
+          console.error("Failed to load navigation component");
+        });
+    </script>
+
+    <div class="login-container flex items-center justify-center p-4 mt-16">
         <div class="w-full max-w-md bg-white rounded-xl shadow-lg overflow-hidden">
             <!-- Header -->
             <div class="bg-gradient-to-r from-primary to-secondary p-6 text-center">
