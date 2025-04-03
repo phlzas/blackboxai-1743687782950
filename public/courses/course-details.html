@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  <script>
+    fetch('/components/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+
+  <div class="container mx-auto p-4 pt-8 max-w-4xl">
+    <div id="course-details" class="bg-white p-8 shadow-lg rounded-lg">
+      <!-- Course details will be dynamically populated by JavaScript -->
+    </div>
+  </div>
+
+  <script src="js/course-details.js"></script>
+</body>
+</html>
