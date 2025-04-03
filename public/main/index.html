@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Coach - Live A Life You Love</title>
+    <!-- Development-only Tailwind CDN - For production, install via npm -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            important: true,
+            darkMode: false,
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#7C3AED',
+                        secondary: '#4F46E5',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .hero-bg {
+            background-image: url('../images/backgrounds/freepik__background__23793.png');
+        }
+    </style>
+</head>
+<body class="font-['Poppins']">
+    <!-- Shared Navigation -->
+    <div id="navbar"></div>
+    <script>
+      fetch('/components/navbar.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('navbar').innerHTML = html;
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero relative h-screen flex items-center">
+        <div class="hero-bg absolute inset-0 bg-cover bg-center opacity-20"></div>
+        <div class="container mx-auto px-6 z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 text-gray-800">Live A Life<br>You Love</h1>
+            <a href="../login/index.html">
+                <button class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:scale-105 transition-transform">
+                    Get Started
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-center text-sm uppercase tracking-widest text-purple-600 mb-2">WHAT YOU GET</h2>
+            <h3 class="text-center text-3xl font-bold mb-12">How We Support</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
+                    <img src="../images/coaches/target.svg" alt="Target Icon" class="h-16 mx-auto mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Overcome</h4>
+                    <p class="text-gray-600">Personalized strategies to help you overcome obstacles and achieve breakthroughs.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
+                    <img src="../images/coaches/question.svg" alt="Question Icon" class="h-16 mx-auto mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Understand</h4>
+                    <p class="text-gray-600">Gain deeper self-awareness and understanding of your potential.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
+                    <img src="../images/coaches/hourglass.svg" alt="Hourglass Icon" class="h-16 mx-auto mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Future Self</h4>
+                    <p class="text-gray-600">Visualize and work toward your ideal future self with guided exercises.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
+                    <img src="../images/coaches/growth.svg" alt="Growth Icon" class="h-16 mx-auto mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Grow</h4>
+                    <p class="text-gray-600">Continuous growth through tailored coaching and actionable feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Coaches</h2>
+            <!-- Coach cards would go here with same Tailwind styling -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-center text-sm uppercase tracking-widest text-purple-600 mb-2">WHAT CLIENTS SAY</h2>
+            <h3 class="text-center text-3xl font-bold mb-12">Testimonials</h3>
+            <!-- Testimonial cards would go here with same Tailwind styling -->
+        </div>
+    </section>
+</body>
+</html>
