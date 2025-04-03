@@ -1,0 +1,51 @@
+/* Optimized CSS file - Only keeping essential custom styles */
+.hero-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Slider specific styles */
+.coaches-slider,
+.testimonials-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.coach-cards,
+.testimonial-cards {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Coach card hover effect */
+.coach-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+}
