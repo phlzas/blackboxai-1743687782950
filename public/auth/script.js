@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Load navbar component with improved error handling
-  fetch("./components/navbar.html")
+  fetch("/components/navbar.html")
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
