@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonials | CoachHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body class="font-sans text-gray-800 bg-gray-100">
+  <!-- Shared Navigation -->
+  <div id="navbar"></div>
+  <script>
+    fetch('../components/navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+      });
+  </script>
+
+  <!-- Testimonials Header -->
+  <section class="bg-blue-600 text-white py-20">
+    <div class="container mx-auto px-8 text-center">
+      <h1 class="text-5xl font-bold mb-4">Client Success Stories</h1>
+      <p class="text-xl max-w-2xl mx-auto">Hear from executives and professionals who have transformed their careers through our coaching programs</p>
+    </div>
+  </section>
+
+  <!-- Testimonial Carousel -->
+  <section class="container mx-auto py-20 px-8">
+    <div class="owl-carousel owl-theme">
+      <!-- Testimonial 1 -->
+      <div class="item bg-white p-8 rounded-lg shadow-lg">
+        <div class="flex items-center mb-6">
+          <img src="https://images.pexels.com/photos/2204531/pexels-photo-2204531.jpeg" alt="Sarah Lee" class="w-16 h-16 rounded-full mr-4">
+          <div>
+            <h3 class="text-xl font-bold">Sarah Lee</h3>
+            <p class="text-gray-600">CEO, Tech Startup</p>
+          </div>
+        </div>
+        <div class="text-yellow-500 mb-4">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-700 italic mb-6">"John's leadership coaching helped me transition from manager to director in just 6 months. His strategic frameworks are game-changers that I still use daily in my executive role."</p>
+        <div class="flex items-center">
+          <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Leadership Program</div>
+          <div class="ml-auto text-gray-500 text-sm">March 2023</div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="item bg-white p-8 rounded-lg shadow-lg">
+        <div class="flex items-center mb-6">
+          <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Michael Chen" class="w-16 h-16 rounded-full mr-4">
+          <div>
+            <h3 class="text-xl font-bold">Michael Chen</h3>
+            <p class="text-gray-600">VP of Engineering</p>
+          </div>
+        </div>
+        <div class="text-yellow-500 mb-4">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-700 italic mb-6">"The team development program transformed our department from constant conflict to top performance in 3 months. We've maintained our productivity gains for over a year now."</p>
+        <div class="flex items-center">
+          <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Team Development</div>
+          <div class="ml-auto text-gray-500 text-sm">January 2023</div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="item bg-white p-8 rounded-lg shadow-lg">
+        <div class="flex items-center mb-6">
+          <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg" alt="Jessica Wong" class="w-16 h-16 rounded-full mr-4">
+          <div>
+            <h3 class="text-xl font-bold">Jessica Wong</h3>
+            <p class="text-gray-600">Marketing Director</p>
+          </div>
+        </div>
+        <div class="text-yellow-500 mb-4">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-700 italic mb-6">"After just 4 months of career coaching, I successfully negotiated a 35% salary increase and landed my dream role. The negotiation frameworks alone were worth 10x the investment."</p>
+        <div class="flex items-center">
+          <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Career Growth</div>
+          <div class="ml-auto text-gray-500 text-sm">November 2022</div>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="item bg-white p-8 rounded-lg shadow-lg">
+        <div class="flex items-center mb-6">
+          <img src="https://images.pexels.com/photos/3771086/pexels-photo-3771086.jpeg" alt="David Kim" class="w-16 h-16 rounded-full mr-4">
+          <div>
+            <h3 class="text-xl font-bold">David Kim</h3>
+            <p class="text-gray-600">Founder & CEO</p>
+          </div>
+        </div>
+        <div class="text-yellow-500 mb-4">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-700 italic mb-6">"As a first-time founder, John's executive coaching helped me navigate investor negotiations and scale my leadership as we grew from 10 to 50 employees. Invaluable guidance."</p>
+        <div class="flex items-center">
+          <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Executive Program</div>
+          <div class="ml-auto text-gray-500 text-sm">August 2022</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Testimonials -->
+  <section class="bg-gray-50 py-20">
+    <div class="container mx-auto px-8">
+      <h2 class="text-4xl font-bold mb-12 text-center">Video Testimonials</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Video 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+            <i class="fas fa-play text-4xl text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Sarah's Leadership Journey</h3>
+          <p class="text-gray-600">"How coaching helped me become a more confident leader"</p>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+            <i class="fas fa-play text-4xl text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Michael's Team Transformation</h3>
+          <p class="text-gray-600">"From conflict to high performance in 90 days"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <section class="container mx-auto py-20 px-8">
+    <div class="bg-blue-600 text-white rounded-xl p-12 text-center">
+      <h2 class="text-4xl font-bold mb-6">Proven Results</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div>
+          <div class="text-5xl font-bold mb-2">98%</div>
+          <p class="text-xl">Client Satisfaction Rate</p>
+        </div>
+        <div>
+          <div class="text-5xl font-bold mb-2">2.5x</div>
+          <p class="text-xl">Average Promotion Rate</p>
+        </div>
+        <div>
+          <div class="text-5xl font-bold mb-2">85%</div>
+          <p class="text-xl">Team Performance Improvement</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gray-800 text-white py-20">
+    <div class="container mx-auto px-8 text-center">
+      <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Career?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Schedule a free consultation to discuss your goals and how we can help you achieve them</p>
+      <a href="contact.html" class="btn-primary px-8 py-3">Book Your Session</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">CoachHub</h3>
+          <p>Executive coaching for modern leaders</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="hover:text-blue-400 transition">Services</a></li>
+            <li><a href="testimonials.html" class="hover:text-blue-400 transition">Testimonials</a></li>
+            <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Connect</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>© 2023 CoachHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Carousel -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: true,
+        responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          1024: { items: 3 }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
