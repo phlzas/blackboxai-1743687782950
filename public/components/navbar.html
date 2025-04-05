@@ -1,70 +1,42 @@
-<!-- Shared Navigation Component with Enhanced Accessibility -->
-<nav class="bg-white shadow-sm" aria-label="Main navigation">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="/" class="flex items-center focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded">
-      <img src="../../images/coaches/logo.png" alt="Dream Coach Logo" class="h-12" loading="lazy">
-    </a>
-    
-    <!-- Desktop Navigation -->
-    <div class="hidden md:flex space-x-8 items-center">
-      <a href="/index.html" 
-         class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200"
-         aria-current="page">Home</a>
-      <a href="/pages/services.html" 
-         class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200">Services</a>
-      <a href="/courses/" 
-         class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200">Courses</a>
-      <a href="/pages/testimonials.html" 
-         class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200">Testimonials</a>
-      <a href="/pages/contact.html" 
-         class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200">Contact</a>
-      <a href="/student-dashboard.html" 
-         class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200">Dashboard</a>
-      <a href="/auth/login.html" 
-         class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 transition-all duration-200">Login</a>
-    </div>
-    
-    <!-- Mobile Menu Button -->
-    <button class="md:hidden text-2xl mobile-menu-btn focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded p-1"
-            aria-label="Open menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu">
-      ☰
-    </button>
-  </div>
-</nav>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" 
-     class="mobile-menu hidden fixed inset-0 bg-white z-50 p-6"
-     aria-modal="true"
-     aria-hidden="true">
-  <div class="flex justify-end">
-    <button class="close-menu text-2xl focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded p-1"
-            aria-label="Close menu">
-      ×
-    </button>
-  </div>
-  <div class="mt-8 flex flex-col space-y-6">
-    <a href="/index.html" 
-       class="text-2xl text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200"
-       tabindex="-1">Home</a>
-    <a href="/pages/services.html" 
-       class="text-2xl text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200"
-       tabindex="-1">Services</a>
-    <a href="/courses/" 
-       class="text-2xl text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200"
-       tabindex="-1">Courses</a>
-    <a href="/pages/testimonials.html" 
-       class="text-2xl text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200"
-       tabindex="-1">Testimonials</a>
-    <a href="/pages/contact.html" 
-       class="text-2xl text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200"
-       tabindex="-1">Contact</a>
-    <a href="/auth/login.html" 
-       class="text-2xl text-purple-600 font-medium hover:text-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200"
-       tabindex="-1">Login</a>
-  </div>
-</div>
-
-<!-- Note: Mobile menu functionality is now handled by script.js -->
+<head>
+   <link rel="stylesheet" href="../main/styles.css">
+</head>
+<header>
+   <nav>
+       <div class="logo">DREAM COACH</div>
+       <div class="nav-links">
+           <a href="../main/index.html" 
+           class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200"
+           aria-current="page">Home</a>
+        <a href="../pages/services.html" 
+           class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200">Services</a>
+        <a href="../courses/index.html" 
+           class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200">Courses</a>
+        <a href="../pages/testimonials.html" 
+           class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200">Testimonials</a>
+        <a href="../pages/contact.html" 
+           class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200">Contact</a>
+        <a href="../student-dashboard.html" 
+           class="text-gray-700 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 rounded px-2 py-1 transition-colors duration-200">Dashboard</a>
+           <a href="../community/index.html">Community</a>
+       </div>
+       <div class="nav-actions">
+           <button class="search-btn">
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+           </button>
+           <button class="cart-btn">
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+           </button>
+           <div class="profile-dropdown">
+               <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" alt="Profile" class="profile-img">
+               <div class="dropdown-content">
+                   <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Profile</a>
+                   <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg> Edit Account</a>
+                   <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Settings</a>
+                   <hr>
+                   <a href="#" class="logout"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> Logout</a>
+               </div>
+           </div>
+       </div>
+   </nav>
+</header>

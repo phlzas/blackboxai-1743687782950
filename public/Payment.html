@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="Payment style.css" />
+</head>
+<body>
+  <div class="payment-container">
+    <!-- Left Column: Payment -->
+    <div class="left-column">
+      <!-- Payment Method -->
+      <h1>Payment Method</h1>
+      <div class="payment-card">
+        <span class="card-type">
+          <img src="images/icons8-visa-48.png" alt="VISA">
+        </span>
+        <span class="card-number">4855 **** **** ****</span>
+        <span class="card-expiry">04/24</span>
+        <span class="card-name">Vobo Envill</span>
+      </div>
+      <div class="payment-card">
+        <span class="card-type">
+          <img src="images/icons8-mastercard-50.png" alt="Mastercard">
+        </span>
+        <span class="card-number">5795 **** **** ****</span>
+        <span class="card-expiry">04/24</span>
+        <span class="card-name">Vobo Envill</span>
+      </div>
+      <div class="payment-card">
+        <span class="card-type">
+          <img src="images/icons8-paypal-48.png" alt="PayPal">
+        </span>
+        <p style="gap: 10px ;" class="redirect-note">You will be redirected to the PayPal site after reviewing your order.</p>
+      </div>
+      <!-- New Payment Cards -->
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" placeholder="Name on card">
+      </div>
+      <div class="form-group">
+        <label>Card Number</label>
+        <input type="text" placeholder="Card Number">
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <label>MM/YY</label>
+          <input type="text" placeholder="MM/YY">
+        </div>
+        <div class="form-group">
+          <label>CVC</label>
+          <input type="text" placeholder="Security Code">
+        </div>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="remember-card">
+        <label for="remember-card">Remember this card, save it on my card list</label>
+      </div>
+    </div>
+
+    <!-- Right Column: Courses + Order Summary -->
+    <div class="right-column">
+      <div class="card">
+        <h2>Courses 03</h2>
+        <div class="course-item">
+          <img src="images/p1 (1).jpeg" alt="Course Image">
+          <div class="course-details">
+            <div class="secondary">Course ID: Courtney Henry</div>
+            <div class="course-title">Graphic Design Masterclass...</div>
+            <div class="price">$10.00</div>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="images/p1 (2).jpeg" alt="Course Image">
+          <div class="course-details">
+            <div class="secondary">Contact Us: Marvin McKinsey</div>
+            <div class="course-title">Learn Python Programming...</div>
+            <div class="price">$80.00</div>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="images/p1 (3).jpeg" alt="Course Image">
+          <div class="course-details">
+            <div class="secondary">Contact Us: Jacob Jones</div>
+            <div class="course-title">Instagram Marketing 2021...</div>
+            <div class="price"><del>$55.60</del>$20.00</div>
+          </div>
+        </div>
+
+        <h2>Order Summary</h2>
+        <div class="pricing-row">
+          <span>Subtotal</span>
+          <span>$110.00 USD</span>
+        </div>
+        <div class="pricing-row">
+          <span>Coupon Discount</span>
+          <span>-$35.00 USD</span>
+        </div>
+        <div class="pricing-row total">
+          <span>Total:</span>
+          <span>$75.00 USD</span>
+        </div>
+        <button class="payment-btn">Complete Payment</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

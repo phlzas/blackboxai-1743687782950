@@ -9,18 +9,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="font-sans text-gray-800 bg-gray-100">
-  <!-- Navigation Bar -->
-  <nav class="bg-white shadow-lg sticky top-0 z-50">
-    <div class="container mx-auto px-8 py-4 flex justify-between items-center">
-      <a href="/" class="text-3xl font-black text-blue-600">CoachHub</a>
-      <div class="space-x-6">
-        <a href="index.html#about" class="hover:text-blue-500 transition">About</a>
-        <a href="services.html" class="hover:text-blue-500 transition">Services</a>
-        <a href="testimonials.html" class="hover:text-blue-500 transition">Testimonials</a>
-        <a href="contact.html" class="btn-primary px-6 py-2">Book Now</a>
-      </div>
-    </div>
-  </nav>
+     <!-- public/courses/course-details.html -->
+<div id="navbar"></div>
+<script>
+    fetch('../components/navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+    });
+</script>
 
   <!-- 404 Content -->
   <section class="container mx-auto py-20 px-8 text-center">

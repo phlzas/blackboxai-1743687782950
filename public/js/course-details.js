@@ -151,12 +151,12 @@ function displayCourseDetails() {
       </div>
 
       <div class="flex gap-4">
-        <a href="/courses.html" class="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors">
+        <a href="./index.html" class="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors">
           Back to Courses
         </a>
-        <button class="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
+        <a href="../Payment.html" class="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
           Enroll Now
-        </button>
+        </a>
       </div>
     `;
   } else {

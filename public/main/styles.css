@@ -1,9 +1,11 @@
+
 :root {
     --primary-color: #00BFA6;
     --text-color: #2D3436;
     --background-color: #F5F6F8;
     --gradient: linear-gradient(135deg, #00BFA6 0%, #0084F4 100%);
 }
+
 
 * {
     margin: 0;
